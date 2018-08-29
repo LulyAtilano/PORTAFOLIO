@@ -1,0 +1,235 @@
+/* FONT FAMILIES
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Cabin', sans-serif;
+*/
+
+/* COLORS */
+.purple-bg {
+    background-color: #3B142A;
+} 
+
+.purple-text {
+    color: #3B142A;
+}
+
+.gray-bg {
+    background-color: #4A444A;
+} 
+
+.gray-text {
+    color: #4A444A;
+}
+
+.green-bg {
+    background-color: #70937C;
+} 
+
+.green-text {
+    color:  #70937C;
+}
+
+.cream-bg {
+    background-color: #EBCB99;
+}
+
+.cream-text {
+    color: #EBCB99;
+}
+
+.pink-bg { 
+    background-color: #D22B39;
+}
+
+.pink-text {
+    color: #D22B39;
+}
+
+.white-text {
+    color: white;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.righth {
+    float: right;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/* ********* HEADER ********* */
+header, footer {
+    background-color: #3B142A;
+    color: white;
+    padding: .7em;
+    text-align: center;
+    position: relative;
+}
+
+header > h2 {
+    font-family: 'Cabin', sans-serif;
+    letter-spacing: 15px;
+    font-size: 2em;
+    margin: 10px 0;
+    /*font-family: 'Muli', sans-serif;
+    font-family: 'Cabin', sans-serif;*/
+}
+
+header > h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    letter-spacing: 10px;
+    margin: 0;
+}
+
+/* ********* MAIN ********* */
+main svg {
+    border: 1px solid purple;
+}
+
+main > div.fixed-action-btn ul {
+    left: 10px;
+    text-align: left;
+}
+
+/* ********* FOOTER ********* */
+footer > p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    letter-spacing: 10px;
+    margin: 0;
+}
+
+
+/* ********* MOBILE ********* */
+main div#btn-sections-mobile {
+    position: absolute;
+    top: 30%;
+    left: 1em;
+    right: 0;
+    bottom: 0;
+}
+
+div#btn-sections-mobile a > i {
+    padding: 1em;
+    border-radius: 50%;
+}
+
+div#btn-sections-mobile ul li a > i {
+    padding: .5em;
+    border-radius: 50%;
+    margin-top: .5em;
+    
+}
+
+div#btn-sections-mobile ul li{
+    list-style: none;
+}
+
+/* ********* MODALS ********* */
+
+div.modal-shadow {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9% 20%;
+    background-size: cover;
+    background-image: linear-gradient(to bottom right, #995da7, #30728c);
+    z-index: 100;
+    top: 0;
+    position: absolute;
+    display: none;
+}
+
+div.modal {
+    box-shadow: 9px 9px 16px 0px rgba(46, 44, 122, 0.77);
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 2em;
+}
+
+div.modal div.modal-header {
+    padding: 1em;
+}
+
+div.modal div.modal-header > h4, button {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+div.modal div.modal-header > h4 {
+    width: 93%;
+    text-align: center;
+    margin: 15px 0;
+    font-family: 'Muli', sans-serif;
+    font-size: 2em;
+}
+
+div.modal div.modal-header > button.close {
+    width: 4%;
+    margin-left: 5px;
+    background-color: transparent;
+    font-size: 2em;
+    padding: 0;
+    border: 0;
+}
+
+div.modal div.modal-content {
+    min-height: 15em;
+    height: auto;
+    padding: 1em 1.5em;
+    color: #4A444A;
+    box-sizing: border-box;
+    border: 2px dotted #70937C;
+}
+
+
+/* Modal Projects */
+
+div#modal-Projects div.modal-content div.row {
+    padding: 0 auto;
+    width: 100%;
+}
+
+div#modal-Projects div.modal-content div.row > div.divs-projects {
+    height: 5em;
+    width: 49%;
+    border: 1px solid black;
+    display: inline-flex;
+}
+
+div#modal-Contact div div#content-Projects div.row {
+    padding: 5%;
+}
+
+/*i.fa-github, i.fa-file-pdf, i.fa-envelope, i.fa-linkedin, i.fa-css3, i.fa-html5, i.fa-js-square, i.fa-sass, i.fa-react, i.fa-node {
+    font-size: 3em;
+    margin: 1em;
+}*/
+
+div#content-Projects div.row > i {
+    font-size: 3em;
+    margin: 1em;
+}
+
+div#modal-About-Me div.modal-content div.row > p {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.3em;
+    letter-spacing: 5px;
+    margin: 0;
+}
