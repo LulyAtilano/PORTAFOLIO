@@ -243,3 +243,17 @@ div#modal-About-Me div.modal-content div.row > p {
     margin: 0;
     text-align: justify;
 }
+
+/* MEDIAS QUERIES */
+
+@media screen and (max-width:1000px) {
+    header > h2, h4 {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    header > h2, h4 {
+        color: gold;
+    }
+}
