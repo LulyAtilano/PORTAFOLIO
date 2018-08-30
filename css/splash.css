@@ -1,0 +1,73 @@
+/* SPLASH */
+
+/* FONT FAMILIES
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Cabin', sans-serif;
+*/
+
+/* COLORS */
+.purple-bg {
+    background-color: #3B142A;
+} 
+
+.purple-text {
+    color: #3B142A;
+}
+
+.gray-bg {
+    background-color: #4A444A;
+} 
+
+.gray-text {
+    color: #4A444A;
+}
+
+.green-bg {
+    background-color: #70937C;
+} 
+
+.green-text {
+    color:  #70937C;
+}
+
+.cream-bg {
+    background-color: #EBCB99;
+}
+
+.cream-text {
+    color: #EBCB99;
+}
+
+.pink-bg { 
+    background-color: #D22B39;
+}
+
+.pink-text {
+    color: #D22B39;
+}
+
+.white-text {
+    color: white;
+}
+
+.white-bg {
+    background-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: rgb(59, 20, 42);
+    display: flex; 
+}
+
+div#splash-portafolio{
+    height: 60vh;
+    margin-top: 20vh;
+    width: 100%;
+    border-top: 5px solid #4A444A;
+    border-bottom: 5px solid #4A444A;
+}
