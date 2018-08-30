@@ -66,7 +66,7 @@ body {
 }
 
 header{
-    height: 5em;
+    height: 10vh;
 }
 
 main{
@@ -75,7 +75,7 @@ main{
 }
 
 footer{
-    height: 1.5em;
+    height: 5vh;
 }
 
 .center {
@@ -106,10 +106,8 @@ header, footer {
 header > h2 {
     font-family: 'Cabin', sans-serif;
     letter-spacing: 15px;
-    font-size: 2em;
-    margin: 10px 0;
-    /*font-family: 'Muli', sans-serif;
-    font-family: 'Cabin', sans-serif;*/
+    font-size: 1.5em;
+    margin: 0;
 }
 
 header > h4 {
@@ -120,7 +118,7 @@ header > h4 {
 }
 
 /* ********* MAIN ********* */
-main > div.fixed-action-btn ul {
+main > .fixed-action-btn ul {
     left: 10px;
     text-align: left;
 }
@@ -130,36 +128,6 @@ footer > p {
     font-family: 'Open Sans Condensed', sans-serif;
     letter-spacing: 10px;
     margin: 0;
-}
-
-
-/* ********* MOBILE ********* */
-main div#btn-sections-mobile {
-    position: absolute;
-    top: 22%;
-    left: 1em;
-    right: 0;
-    bottom: 0;
-    height: 350px;
-}
-
-div#btn-sections-mobile a > i {
-    padding: 1em;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-div#btn-sections-mobile ul li a > i {
-    padding: auto;
-    border-radius: 50%;
-    margin-top: .3em;
-    width: 1.4em;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-div#btn-sections-mobile ul li{
-    list-style: none;
 }
 
 /* ********* MODALS ********* */
@@ -172,53 +140,57 @@ div#btn-sections-mobile ul li{
     z-index: 100;
     top: 0;
     position: absolute;
-    display: none;
+    flex-direction: column;
+    /*align-items: center;*/
+    align-items: stretch;
+    align-content: center;
+    padding: 5% 8.33%;
 }
 
-div.modal {
+.modal {
     box-shadow: 9px 9px 16px 0px rgba(46, 44, 122, 0.77);
     box-sizing: border-box;
     border-radius: 20px;
     padding: 2em;
-    height: 80vh;
-    width: 60%;
-    margin: auto;
-    margin-top: 5%;
+    min-height: 50vh;
+    /*height: 550px;
+    max-width: 750px;*/
+    width: 100%;
+    position: relative;
 }
 
-div.modal div.modal-header {
+.modal .modal-header {
     padding: 1em;
 }
 
-div.modal div.modal-header > h4 {
-    width: 93%;
+.modal .modal-header > h4 {
+    width: 100%;
     text-align: center;
-    margin: 15px 0;
+    margin: 0;
+    padding: .3em;
     font-family: 'Muli', sans-serif;
     font-size: 2em;
 }
 
-div.modal div.modal-content {
-    height: 50vh;
+.modal .modal-content {
     box-sizing: border-box;
     flex-direction: row;
-    border: 1px solid red;
-    padding: 5% 0;
+    padding: 5%;
 }
 
-div.modal-content div.row > i {
+.modal-content .row > i {
     font-size: 3em;
-    /*margin: 0 .5em;*/
 }
 
-div.modal-shadow div.modal-content div.row {
-    /*display: flex;*/
+.modal-shadow .modal-content .row {
+    display: flex;
+    justify-content: space-around;
     padding: 15px;
     height: auto;
-    border: 1px solid blue;
+    margin-bottom: 15px;
 }
 
-div.modal > button.close {
+.modal > button.close {
     width: 4%;
     margin-left: 5px;
     background-color: transparent;
@@ -228,15 +200,19 @@ div.modal > button.close {
     cursor: pointer;
 }
 
+#btn-sections-mobile {
+    display: none;
+}
+
 /* Modal Projects */
-div#modal-Projects div.modal-content div.row > div.divs-projects {
+#modal-Projects .modal-content .row > .divs-projects {
     height: 3em;
     width: 49%;
     border: 1px solid black;
     display: flex;
 }
 
-div#modal-About-Me div.modal-content div.row > p {
+#modal-About-Me .modal-content .row > p {
     font-family: 'Muli', sans-serif;
     font-size: 1em;
     letter-spacing: 5px;
@@ -244,16 +220,126 @@ div#modal-About-Me div.modal-content div.row > p {
     text-align: justify;
 }
 
+
+
 /* MEDIAS QUERIES */
 
 @media screen and (max-width:1000px) {
     header > h2, h4 {
         color: red;
     }
+
+    header > h2 {
+        font-family: 'Cabin', sans-serif;
+        letter-spacing: 8px;
+        font-size: 1.4em;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    
+    header > h4 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1em;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+    
+    .modal .modal-header > h4 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        font-family: 'Muli', sans-serif;
+        font-size: 1.5em;
+    }
+    
+    .modal .modal-content {
+        box-sizing: border-box;
+        flex-direction: row;
+        padding: 5%;
+    }
+
+    .modal-content .row > i {
+        font-size: 2em;
+    }
+
+    #modal-About-Me .modal-content .row > p {
+        font-size: .7em;
+        letter-spacing: 1px;
+    }
+    
+    footer > p {
+        font-family: 'Open Sans Condensed', sans-serif;
+        letter-spacing: 5px;
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 425px) {
     header > h2, h4 {
         color: gold;
+    }
+
+    header > h2 {
+        font-family: 'Cabin', sans-serif;
+        letter-spacing: 10px;
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        margin-top: 0;
+    }
+    
+    header > h4 {
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-size: 1em;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+
+    #btn-sections-mobile {
+        position: absolute;
+        height: 10vh;
+        min-width: 100%;
+        box-sizing: border-box;
+        display: inline-flex;
+        justify-content: center;
+        padding: .5em;
+    }
+     
+    #btn-sections-mobile a > i {
+        padding: .5em;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+     
+    #btn-sections-mobile ul {
+         padding-left: 8px;
+         display: flex;
+         margin: 0;
+    }
+      
+    #btn-sections-mobile ul li {
+         list-style: none;
+         margin-right: 8px;
+    }
+     
+    #btn-sections-mobile ul li a > i {
+        padding: .5em;
+        border-radius: 50%;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+    #modal-About-Me .modal-content .row > p {
+        font-size: .5em;
+        letter-spacing: 1px;
+    }
+
+    .modal-content .row > i {
+        font-size: 1.5em;
+    }
+
+    footer > p {
+        font-family: 'Open Sans Condensed', sans-serif;
+        letter-spacing: 5px;
+        margin: 0;
     }
 }
