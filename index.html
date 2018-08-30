@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> Portafolio ~ Luly </title>
+        <title> Luly Atilano </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Css Files-->
         <link rel="shortcut icon" href="./assets/images/globe.ico" /> 
@@ -17,25 +17,25 @@
             <h4> ~ Front-end Developer ~</h4>
         </header>
         <main>
-            <div id="btn-sections-mobile" class="fixed-action-btn right">
+            <div id="btn-sections-mobile" class="fixed-action-btn">
                 <a class="btn-floating btn-large">
                     <i class="fas fa-home purple-bg white-text"></i>
                 </a>
                 <ul>
-                    <li><a class="btn-floating" data-modal-header="About Me" onclick="showModal(this)"><i class="far fa-grin-wink pink-bg white-text"></i></a></li>
-                    <li><a class="btn-floating" data-modal-header="Projects" onclick="showModal(this)"><i class="far fa-folder-open green-bg white-text"></i></a></li>
-                    <li><a class="btn-floating" data-modal-header="Tech Skills" onclick="showModal(this)"><i class="fas fa-code cream-bg white-text"></i></a></li>
-                    <li><a class="btn-floating" data-modal-header="Contact" onclick="showModal(this)"><i class="far fa-address-card gray-bg white-text"></i></a></li>
-                    <li><a class="btn-floating" data-modal-header="Hobbies" onclick="showModal(this)"><i class="fas fa-bicycle purple-bg white-text"></i></a></li>
+                    <li class="li-sections-mobile"><a class="btn-floating" data-modal-header="About Me" onclick="showModal(this)"><i class="far fa-grin-wink pink-bg white-text"></i></a></li>
+                    <li class="li-sections-mobile"><a class="btn-floating" data-modal-header="Projects" onclick="showModal(this)"><i class="far fa-folder-open green-bg white-text"></i></a></li>
+                    <li class="li-sections-mobile"><a class="btn-floating" data-modal-header="Tech Skills" onclick="showModal(this)"><i class="fas fa-code cream-bg white-text"></i></a></li>
+                    <li class="li-sections-mobile"><a class="btn-floating" data-modal-header="Contact" onclick="showModal(this)"><i class="far fa-address-card gray-bg white-text"></i></a></li>
+                    <li class="li-sections-mobile"><a class="btn-floating" data-modal-header="Hobbies" onclick="showModal(this)"><i class="fas fa-bicycle purple-bg white-text"></i></a></li>
                 </ul>
             </div>
-            <svg width="99.9%" height="75vh"> <image width="120%" height="120%" x="-100" y="0" xlink:href="./assets/images/mapamundi-acuarela.jpg"></image></svg>
+            <svg width="99.9%" height="85vh"> <image width="120%" height="100%" x="-100" y="0" xlink:href="./assets/images/mapamundi-acuarela.jpg"></image></svg>
             <div id="modal-container"></div>
 
             <!-- MODAL ABOUT ME -->
             <div id="modal-About-Me" class="modal-shadow">
                 <div class="modal white-bg">
-                    <button class="close right" onclick="closeModal()">&times</button>
+                    <button class="close right">&times</button>
                     <div class="modal-header white-bg">
                         <h4 class="center purple-text"> About Me </h4>
                     </div>
@@ -54,7 +54,7 @@
             <!-- MODAL PROJECTS -->
             <div id="modal-Projects" class="modal-shadow">
                 <div class="modal white-bg">
-                        <button class="close right" onclick="closeModal()">&times</button>
+                        <button class="close right">&times</button>
                     <div class="modal-header white-bg">
                         <h4 class="center purple-text"> Projects </h4>
                     </div>
@@ -74,7 +74,7 @@
             <!-- MODAL TECH SKILLS -->
             <div id="modal-Tech-Skills" class="modal-shadow">
                 <div class="modal white-bg">
-                    <button class="close right" onclick="closeModal()">&times</button>
+                    <button class="close right">&times</button>
                     <div class="modal-header white-bg"> 
                         <h4 class="center purple-text"> Tech Skills </h4>
                     </div>
@@ -97,7 +97,7 @@
             <!-- MODAL CONTACT -->
             <div id="modal-Contact" class="modal-shadow">
                 <div class="modal white-bg">
-                    <button class="close right" onclick="closeModal()">&times</button>
+                    <button class="close right">&times</button>
                     <div class="modal-header white-bg">
                         <h4 class="center purple-text"> Contact </h4>
                     </div>
@@ -115,7 +115,7 @@
             <!-- MODAL HOBBIES -->
             <div id="modal-Hobbies" class="modal-shadow">
                     <div class="modal white-bg">
-                        <button class="close right" onclick="closeModal()">&times</button>
+                        <button class="close right">&times</button>
                         <div class="modal-header white-bg">
                             <h4 class="center purple-text"> Hobbies </h4>
                         </div>
@@ -143,7 +143,6 @@
 
         <!-- Js Files -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>-->
         <script src="js/app.js"></script>
     </body>
 </html>
