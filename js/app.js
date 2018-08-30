@@ -1,13 +1,19 @@
 $(document).ready(function(){
     //$('.modal').modal();
-    $('button.close').click(closeModal());
-    //$('a.btn-floating').click(showModal());
+    $('button.close').click(function(){
+      $('div.modal-shadow').hide();
+    });
+
+    //$('li.li-sections-mobile').on("click",showModal);
+    //$('a.btn-floating').on("click",showModal(this));
     //$('.fixed-action-btn').floatingActionButton();
     $('.fixed-action-btn').floatingActionButton({direction: 'bottom'});
   });
 
 function showModal(element) {
   let section = element.getAttribute("data-modal-header");
+  //let section = $('a.btn-floating').data("data-modal-header");
+  //console.log(section);
   let modalName = "";
 
   switch(section) {
@@ -33,10 +39,4 @@ function showModal(element) {
     break;
   }
   return modalName.style.display="block";
-}
-
-function closeModal(){
-  let modalBase = document.getElementsByClassName("modal-shadow");
-  
-  return $(modalBase).hide();
 }
