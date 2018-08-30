@@ -1,17 +1,10 @@
 $(document).ready(function(){
     //$('.modal').modal();
+    $('button.close').click(closeModal());
+    //$('a.btn-floating').click(showModal());
+    //$('.fixed-action-btn').floatingActionButton();
     $('.fixed-action-btn').floatingActionButton({direction: 'bottom'});
   });
-
-function fillModal(element){
-  let nameModalHeader = element.getAttribute("data-modal-header");
-  let contentSectionModal = document.getElementsByClassName('.modal-content').innerHTML;
-  $(contentSectionModal).removeClass('hide');
-  
-  //let modal = createModal(nameModalHeader, contentSectionModal);
-  return $('#modal-container').append(modal);
-}
-
 
 function showModal(element) {
   let section = element.getAttribute("data-modal-header");
@@ -47,36 +40,3 @@ function closeModal(){
   
   return $(modalBase).hide();
 }
-
-/*function createModal(header,content){
-  //let section = header;
-  
-  switch(section){
-    /*case "About Me":
-      return  `<div id="modal-aboutMe" class="modal-shadow">
-                  <div class="modal white-bg">          
-                    <div class="modal-header white-bg">
-                      <h4 class="center purple-text"> ${header} </h4>
-                      <span class="close">&times</span>
-                    </div>
-                      <div class="modal-content white-bg">
-                        <p> Example text </p>
-                      </div>
-                  </div>
-              </div>`
-    break; 
-    case "Projects":
-      return 
-    break; 
-  }
-
-  return `<diV class="modal-shadow">
-            <div class="modal white-bg">
-              <div class="modal-header white-bg">
-                <h4 class="center purple-text"> ${header} </h4>
-                <span class="close">&times</span>
-              </div>
-              <div class="modal-content white-bg"> ${content} </div>
-          </div>`
-
-}*/
