@@ -57,25 +57,32 @@ font-family: 'Cabin', sans-serif;
 /* */
 
 body {
-    margin: 0;
     padding: 0;
+    margin: 0;
     height: 100vh;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
 }
 
-header{
-    height: 10vh;
+header, main, footer {
+    align-self: auto;
 }
 
-main{
+header, footer{
+    flex: 0;
+    padding: .7em;
+}
+
+main {
     display: flex;
-    flex:auto;
+    flex: 1;
+    align-items: stretch;
+    background-color:red;
 }
 
-footer{
-    height: 5vh;
+main #img-mapamundi {
+    width: 100%;
 }
 
 .center {
@@ -94,15 +101,11 @@ footer{
     display: block;
 }
 
-/* ********* HEADER ********* */
-header, footer {
-    background-color: #3B142A;
-    color: white;
-    padding: .7em;
-    text-align: center;
-    position: relative;
+svg {
+    object-fit: cover;
 }
 
+/* ********* HEADER ********* */
 header > h2 {
     font-family: 'Cabin', sans-serif;
     letter-spacing: 15px;
@@ -145,6 +148,7 @@ footer > p {
     align-items: stretch;
     align-content: center;
     padding: 5% 8.33%;
+    display: none;
 }
 
 .modal {
@@ -165,7 +169,6 @@ footer > p {
 
 .modal .modal-header > h4 {
     width: 100%;
-    text-align: center;
     margin: 0;
     padding: .3em;
     font-family: 'Muli', sans-serif;
@@ -246,9 +249,7 @@ footer > p {
     
     .modal .modal-header > h4 {
         width: 100%;
-        text-align: center;
         padding: 0;
-        font-family: 'Muli', sans-serif;
         font-size: 1.5em;
     }
     
