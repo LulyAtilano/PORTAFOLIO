@@ -77,8 +77,6 @@ header, footer{
 main {
     display: flex;
     flex: 1;
-    align-items: stretch;
-    background-color:red;
 }
 
 main #img-mapamundi {
@@ -99,10 +97,6 @@ main #img-mapamundi {
 
 .show {
     display: block;
-}
-
-svg {
-    object-fit: cover;
 }
 
 /* ********* HEADER ********* */
@@ -177,11 +171,15 @@ footer > p {
 
 .modal .modal-content {
     box-sizing: border-box;
-    flex-direction: row;
+    flex-direction: column;
     padding: 5%;
 }
 
 .modal-content .row > i {
+    font-size: 3em;
+}
+
+.modal-content .row a > i {
     font-size: 3em;
 }
 
@@ -203,27 +201,104 @@ footer > p {
     cursor: pointer;
 }
 
-#btn-sections-mobile {
+/*#btn-sections-mobile {
     display: none;
-}
+}*/
 
 /* Modal Projects */
-#modal-Projects .modal-content .row > .divs-projects {
-    height: 3em;
-    width: 49%;
-    border: 1px solid black;
+#modal-Projects .modal-content .row {
+    margin-bottom: 0;
+    justify-content: space-around;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    overflow-y: scroll;
+    height: 40vh;
+    padding: 0;
 }
 
-#modal-About-Me .modal-content .row > p {
+#modal-Projects .modal-content .row > .divs-projects {
+    height: 40vh;
+    width: 45%;
+    padding: .5em;
+    align-self: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#modal-Projects .modal-content .row .divs-projects > img {
+    height: 30vh;
+    width: 100%;
+    flex: 1;
+}
+
+#modal-Projects .modal-content .row .divs-projects > img:hover {
+    height: auto;
+    width: auto;
+    z-index: 1000;
+    position: absolute;
+}
+
+#modal-About-Me .modal-content .row .divs-projects > p {
     font-family: 'Muli', sans-serif;
     font-size: 1em;
     letter-spacing: 5px;
     margin: 0;
     text-align: justify;
+    padding: 16px;
+    width: 100%;
 }
 
+#modal-Projects .modal-content .row .divs-projects > p {
+    font-family: 'Muli', sans-serif;
+    font-size: 1em;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 6px;
+    font-weight: bolder;
+    flex: 0;
+}
 
+#content-Projects {
+    padding: 32px;
+}
+
+#modal-Projects #content-Projects .row .divs-projects .hover-links-projects {
+    display: block;
+    justify-content: space-around;
+    padding-top: 8px;
+    flex: 0;
+}
+
+#modal-Projects #content-Projects .row .divs-projects .hover-links-projects > a {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+    padding: 0 6px;
+    color: #D22B39;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.svg {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.svg svg {
+    height: auto;
+    justify-content: center;
+}
+
+.svg svg image {
+    min-width: 412px;
+    width: 768px;
+    max-width: 1321px;
+}
 
 /* MEDIAS QUERIES */
 
@@ -262,12 +337,42 @@ footer > p {
     .modal-content .row > i {
         font-size: 2em;
     }
+    
+    .modal-content .row a > i{
+        font-size: 2em;
+    }
 
     #modal-About-Me .modal-content .row > p {
         font-size: .7em;
         letter-spacing: 1px;
     }
-    
+
+    #modal-Projects #content-Projects {
+        padding: 0;
+    }
+
+    #modal-Projects #content-Projects .row  {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #modal-Projects #content-Projects .row > .divs-projects {
+        width: 50%;
+        align-items: center;
+    }
+
+    #modal-Projects #content-Projects .row .divs-projects > p {
+        padding: 6px;
+    }
+
+    #modal-Projects .modal-content .row .divs-projects > img:hover {
+        height: 60vh;
+        width: 90%;
+        z-index: 1000;
+        position: relative;
+    }
+
     footer > p {
         font-family: 'Open Sans Condensed', sans-serif;
         letter-spacing: 5px;
@@ -336,6 +441,22 @@ footer > p {
 
     .modal-content .row > i {
         font-size: 1.5em;
+    }
+
+    .modal-content .row a > i {
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    #modal-Projects #content-Projects .row {
+        padding: 0;
+        overflow-y: scroll;
+        flex-direction: row;
+    }
+
+    #modal-Projects #content-Projects .row > .divs-projects {
+        width: 100%;
+        align-items: stretch;
     }
 
     footer > p {
