@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     </head>
     <body>
-        <header> 
+        <header class="purple-bg white-text center"> 
             <h2> Lourdes Atilano </h2>
             <h4> ~ Front-end Developer ~</h4>
         </header>
@@ -29,7 +29,13 @@
                     <li class="li-sections-mobile"><a class="btn-floating" data-modal-header="Hobbies" onclick="showModal(this)"><i class="fas fa-bicycle purple-bg white-text"></i></a></li>
                 </ul>
             </div>
-            <svg width="99.9%" height="85vh"> <image width="120%" height="100%" x="-100" y="0" xlink:href="./assets/images/mapamundi-acuarela.jpg"></image></svg>
+            
+            <!--<svg width="100%" heigth="100px" x="0" y="0">
+                <image xlink:href="./assets/images/map.svg"></image>
+            </svg> -->
+
+            <img id="img-mapamundi" src="./assets/images/map.svg"/>
+            
             <div id="modal-container"></div>
 
             <!-- MODAL ABOUT ME -->
@@ -137,7 +143,7 @@
                 </div>
 
         </main>
-        <footer>
+        <footer class="purple-bg white-text center">
             <p> <i class="fas fa-heart"></i> Made in Mexico 2018 <i class="fas fa-heart"></i>  </p>
         </footer>
 
