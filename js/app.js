@@ -7,7 +7,7 @@ $(document).ready(function(){
     //$('li.li-sections-mobile').on("click",showModal);
     //$('a.btn-floating').on("click",showModal(this));
     //$('.fixed-action-btn').floatingActionButton();
-    $('.fixed-action-btn').floatingActionButton({direction: 'bottom'});
+    $('.fixed-action-btn').floatingActionButton({direction: 'left'});
   });
 
 function showModal(element) {
