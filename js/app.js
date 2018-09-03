@@ -39,4 +39,7 @@ function showModal(element) {
     break;
   }
   return modalName.style.display="block";
+
+
+  
 }

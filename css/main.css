@@ -74,14 +74,15 @@ header, footer{
     padding: .7em;
 }
 
-main {
+/*main {
     display: flex;
     flex: 1;
-}
+}*/
 
-main #img-mapamundi {
+/*main #img-mapamundi {
     width: 100%;
-}
+    border: 1px solid purple;
+}*/
 
 .center {
     text-align: center;
@@ -128,21 +129,19 @@ footer > p {
 }
 
 /* ********* MODALS ********* */
-
 .modal-shadow {
-    height: 100vh;
-    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     box-sizing: border-box;
     background-image: linear-gradient(to bottom right, rgba(132, 61, 150, .5), rgba(48, 114, 140, .5));
-    z-index: 100;
-    top: 0;
+    width: 100%;
+    height: 100vh;
     position: absolute;
-    flex-direction: column;
-    /*align-items: center;*/
-    align-items: stretch;
-    align-content: center;
-    padding: 5% 8.33%;
-    display: none;
+    top: 0;
+    z-index: 100;
 }
 
 .modal {
@@ -150,11 +149,15 @@ footer > p {
     box-sizing: border-box;
     border-radius: 20px;
     padding: 2em;
-    min-height: 50vh;
+    /*min-height: 50vh;*/
+    max-height: 80vh;
+    /*align-content: center;*/
     /*height: 550px;
     max-width: 750px;*/
-    width: 100%;
+    min-width: 60%;
+    width: 70%;
     position: relative;
+    margin: 3em auto;
 }
 
 .modal .modal-header {
@@ -191,6 +194,10 @@ footer > p {
     margin-bottom: 15px;
 }
 
+.modal-shadow .modal-content .row:last-child {
+    margin-bottom: 0;
+}
+
 .modal > button.close {
     width: 4%;
     margin-left: 5px;
@@ -201,9 +208,9 @@ footer > p {
     cursor: pointer;
 }
 
-/*#btn-sections-mobile {
+#btn-sections-mobile {
     display: none;
-}*/
+}
 
 /* Modal Projects */
 #modal-Projects .modal-content .row {
@@ -281,23 +288,30 @@ footer > p {
     text-decoration: none;
 }
 
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+}
+
 .svg {
     display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     box-sizing: border-box;
+    width: 100%;
 }
 
 .svg svg {
-    height: auto;
-    justify-content: center;
+    height: 75vh;
+    min-width: 312px;
+    max-width: 100%;
 }
 
 .svg svg image {
-    min-width: 412px;
-    width: 768px;
-    max-width: 1321px;
+    border: 1px solid red;
+    height: 4w0vh;
 }
 
 /* MEDIAS QUERIES */
@@ -400,8 +414,14 @@ footer > p {
         margin: 0;
     }
 
+    main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
     #btn-sections-mobile {
-        position: absolute;
+        position: relative;
         height: 10vh;
         min-width: 100%;
         box-sizing: border-box;
