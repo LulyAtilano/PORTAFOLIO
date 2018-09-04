@@ -39,7 +39,9 @@ function showModal(element) {
     break;
   }
   return modalName.style.display="block";
-
-
   
 }
+
+function clickElement(e){
+  console.log(e);
+};
