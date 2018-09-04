@@ -1,6 +1,5 @@
 /* FONT FAMILIES
 font-family: 'Open Sans Condensed', sans-serif;
-font-family: 'Muli', sans-serif;
 font-family: 'Cabin', sans-serif;
 */
 
@@ -128,9 +127,13 @@ footer > p {
     margin: 0;
 }
 
+footer p > i.fa-heart:hover {
+    color: red
+}
+
 /* ********* MODALS ********* */
 .modal-shadow {
-    display: flex;
+    display: none;
     flex-flow: column;
     justify-content: center;
     align-content: center;
@@ -168,14 +171,14 @@ footer > p {
     width: 100%;
     margin: 0;
     padding: .3em;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 2em;
 }
 
 .modal .modal-content {
     box-sizing: border-box;
     flex-direction: column;
-    padding: 5%;
+    padding: 1em;
 }
 
 .modal-content .row > i {
@@ -186,10 +189,21 @@ footer > p {
     font-size: 3em;
 }
 
+.modal-content .row > i:hover {
+    border: 1px solid #D22B39;
+    padding: .3em;
+    border-radius: 50%   
+}
+
+.modal-content .row a > i:hover {
+    border: 1px solid #D22B39;
+    padding: .3em;
+    border-radius: 50%
+}
+
 .modal-shadow .modal-content .row {
     display: flex;
     justify-content: space-around;
-    padding: 15px;
     height: auto;
     margin-bottom: 15px;
 }
@@ -241,24 +255,21 @@ footer > p {
 }
 
 #modal-Projects .modal-content .row .divs-projects > img:hover {
-    height: auto;
-    width: auto;
-    z-index: 1000;
-    position: absolute;
+    border: 1px solid #70937C;
+    padding: 5px;
 }
 
-#modal-About-Me .modal-content .row .divs-projects > p {
-    font-family: 'Muli', sans-serif;
+#modal-About-Me .modal-content .row > p {
+    font-family: 'Cabin', sans-serif;
     font-size: 1em;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin: 0;
     text-align: justify;
-    padding: 16px;
     width: 100%;
 }
 
 #modal-Projects .modal-content .row .divs-projects > p {
-    font-family: 'Muli', sans-serif;
+    font-family: 'Cabin', sans-serif;
     font-size: 1em;
     letter-spacing: 5px;
     margin: 0;
@@ -309,9 +320,8 @@ main {
     max-width: 100%;
 }
 
-.svg svg image {
-    border: 1px solid red;
-    height: 4w0vh;
+.svg svg g rect {
+    background-color: green;
 }
 
 /* MEDIAS QUERIES */
@@ -345,7 +355,7 @@ main {
     .modal .modal-content {
         box-sizing: border-box;
         flex-direction: row;
-        padding: 5%;
+        padding: 1em;
     }
 
     .modal-content .row > i {
@@ -455,8 +465,9 @@ main {
     }
 
     #modal-About-Me .modal-content .row > p {
-        font-size: .5em;
+        font-size: .6em;
         letter-spacing: 1px;
+        padding: 0;
     }
 
     .modal-content .row > i {
