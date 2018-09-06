@@ -112,12 +112,33 @@ header > h3 {
     font-size: 1.2em;
     letter-spacing: 10px;
     margin: 0;
+    display: inline;
+}
+
+span#span-language {
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: absolute;
+    right: 10px;
+    top: 18px;
+    padding: .4em;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+span#span-language:hover {
+    background-color: white;
+    font-weight: bolder;
+    color: #3B142A;
 }
 
 /* ********* MAIN ********* */
 main > .fixed-action-btn ul {
     left: 10px;
     text-align: left;
+}
+
+#pin_mexico, #pin_canada, #pin_brazil, #pin_australia, #pin_germany {
+    cursor: pointer;
 }
 
 /* ********* FOOTER ********* */
@@ -419,7 +440,7 @@ main {
 
     header > h2 {
         font-family: 'Cabin', sans-serif;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
         font-size: 1.2em;
         margin-bottom: 5px;
         margin-top: 0;
@@ -428,8 +449,13 @@ main {
     header > h3 {
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 1em;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
         margin: 0;
+    }
+
+    span#span-language {
+        top: 36px;
+        padding: .2em;
     }
 
     main {
