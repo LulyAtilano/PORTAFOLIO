@@ -4,14 +4,14 @@ $(document).ready(function(){
       $('div.modal-shadow').hide();
     });
 
-    $('h2').addClass('animated fadeInLeft');
-    $('h3').addClass('animated fadeInRight');
+    $('h2').addClass('animated fadeInDown');
+    $('h3').addClass('animated fadeInUp');
 
     $('#btn-sections-mobile').addClass('animated flipInX');
 
     //$('li.li-sections-mobile').on("click",showModal);
     $('.fixed-action-btn').floatingActionButton({direction: 'left'});
-  });
+});
 
 function showModal(element) {
   let section = element.getAttribute("data-modal-header");
@@ -45,6 +45,15 @@ function showModal(element) {
   
 }
 
+
+/* Cambios de Idiomas */
+function englishView(){
+  window.location.href="englishView.html";
+}
+
+function spanishView(){
+  window.location.href="index.html";
+}
 
 /* Animaciones */
 $('h4').addClass('animated slideInDown');
