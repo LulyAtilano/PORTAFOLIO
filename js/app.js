@@ -4,9 +4,12 @@ $(document).ready(function(){
       $('div.modal-shadow').hide();
     });
 
+    $('h2').addClass('animated fadeInLeft');
+    $('h3').addClass('animated fadeInRight');
+
+    $('#btn-sections-mobile').addClass('animated flipInX');
+
     //$('li.li-sections-mobile').on("click",showModal);
-    //$('a.btn-floating').on("click",showModal(this));
-    //$('.fixed-action-btn').floatingActionButton();
     $('.fixed-action-btn').floatingActionButton({direction: 'left'});
   });
 
@@ -38,10 +41,11 @@ function showModal(element) {
     modalName = modalHobbies; 
     break;
   }
-  return modalName.style.display="block";
+  return modalName.style.display="flex";
   
 }
 
-function clickElement(e){
-  console.log(e);
-};
+
+/* Animaciones */
+$('h4').addClass('animated slideInDown');
+$('#text-footer').addClass('animated fadeInUp');
