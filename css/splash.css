@@ -71,3 +71,12 @@ div#splash-portafolio{
     border-top: 5px solid #4A444A;
     border-bottom: 5px solid #4A444A;
 }
+
+div#splash-portafolio i.fa-paper-plane {
+    font-size: 5em;
+    padding: 1.5em;
+    animation-name: plane;
+    animation-duration: 7s;
+    animation-delay: -2s;
+    position: relative;
+}
